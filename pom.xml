@@ -91,7 +91,7 @@
             in "java.lang.module.FindException: Module monitor.observer.zero not found";
             strange... -->
             <!---<argument>-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=127.0.0.1:8000</argument> -->
-            <argument>--module=Core/emil.komp.asteroids.Data.World</argument>
+            <argument>--module=Core/emil.komp.asteroids.Main</argument>
             <argument>--add-modules javafx.graphics,javafx.controls,javafx.base</argument>
           </arguments>
         </configuration>

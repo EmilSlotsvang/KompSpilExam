@@ -22,9 +22,4 @@ public class World {
     private int displayHeight =800;
 
 
-
-
-
-
-
 }
