@@ -1,4 +1,4 @@
-package emil.komp.asteroids.Data;
+package emil.komp.asteroids.common.Data;
 
 import java.io.Serializable;
 import java.util.UUID;

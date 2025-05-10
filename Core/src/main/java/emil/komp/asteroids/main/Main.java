@@ -1,4 +1,4 @@
-package emil.komp.asteroids;
+package emil.komp.asteroids.main;
 
 
 public class Main {
