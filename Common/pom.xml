@@ -8,7 +8,9 @@
         <artifactId>KompSpilExam</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+<dependencies>
 
+</dependencies>
     <artifactId>Common</artifactId>
 
     <properties>
