@@ -16,6 +16,7 @@
     <module>Common</module>
     <module>Collision</module>
     <module>CommonBullet</module>
+    <module>Bullet</module>
   </modules>
   <properties>
     <java>java</java>

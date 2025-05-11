@@ -130,6 +130,7 @@ public class Main extends Application {
                 Polygon removePolygon = polygons.get(polygonEntity);
                 polygons.remove(polygonEntity);
                 gameWindow.getChildren().remove(removePolygon);
+
             }
         }
         for (Entity entity : world.getEntities()){
@@ -142,6 +143,7 @@ public class Main extends Application {
             polygon.setTranslateX(entity.getX());
             polygon.setTranslateY(entity.getY());
             polygon.setRotate(entity.getRotation());
+
 
         }
 
