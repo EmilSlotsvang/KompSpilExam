@@ -11,6 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Polygon;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.util.Collection;
@@ -51,8 +52,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        gameWindow.setPrefSize(gamedata.getDisplayHeight(), gamedata.getDisplayHeight());
 
+        gameWindow.setPrefSize(gamedata.getDisplayHeight(), gamedata.getDisplayHeight());
+        // Text text = new Text(10,10,IPostEntityProcessingService.getKillsteak);
         Scene scene = new Scene (gameWindow);
 
         scene.setOnKeyPressed(event -> {
