@@ -1,0 +1,52 @@
+package emil.komp.asteroids.Asteroids;
+
+import emil.komp.asteroids.common.Data.Entity;
+import emil.komp.asteroids.common.Data.Gamedata;
+import emil.komp.asteroids.common.Data.World;
+import emil.komp.asteroids.common.services.IGamePluginService;
+import emil.komp.asteroids.common.asteroids.asteroid;
+
+import java.util.Random;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
+public class AsteroidPlugin implements IGamePluginService {
+
+    private ScheduledExecutorService scheduler;
+
+    @Override
+    public void start(Gamedata gamedata, World world) {
+        // Start scheduler
+        scheduler = Executors.newSingleThreadScheduledExecutor();
+        scheduler.scheduleAtFixedRate(() -> {
+            Entity asteroid = createAsteroid(gamedata);
+            world.addEntity(asteroid);
+        }, 0, 5, TimeUnit.SECONDS);
+    }
+
+    @Override
+    public void stop(Gamedata gamedata, World world) {
+        // Stop scheduler
+        if (scheduler != null && !scheduler.isShutdown()) {
+            scheduler.shutdownNow();
+        }
+
+        // Fjern alle asteroider
+        for (Entity asteroid : world.getEntities(asteroid.class)) {
+            world.removeEntity(asteroid);
+        }
+    }
+
+    private Entity createAsteroid(Gamedata gamedata) {
+        Entity asteroid = new asteroid();
+        Random rand = new Random();
+        int size = rand.nextInt(10) + 5;
+        asteroid.setPolygonCoordinates(size, -size, -size, -size, -size, size, size, size);
+        asteroid.setX(0);
+        asteroid.setY(0);
+        asteroid.setRadius(size);
+        asteroid.setRotation(rand.nextInt(90));
+        return asteroid;
+    }
+}

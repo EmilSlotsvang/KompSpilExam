@@ -2,3 +2,7 @@
 .lst
 
 .idea/workspace.xml
+*.lst
+*.class
+*.args
+*.jar
