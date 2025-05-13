@@ -1,8 +1,0 @@
-emil\komp\asteroids\common\services\IGamePluginService.class
-emil\komp\asteroids\common\services\IPostEntityProcessingService.class
-emil\komp\asteroids\common\Data\Gamedata.class
-module-info.class
-emil\komp\asteroids\common\Data\Entity.class
-emil\komp\asteroids\common\Data\World.class
-emil\komp\asteroids\common\services\IEntityProcessingService.class
-emil\komp\asteroids\common\Data\GameKeys.class

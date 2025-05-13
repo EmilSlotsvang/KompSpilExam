@@ -6,3 +6,6 @@
 *.class
 *.args
 *.jar
+*.args
+*.lst
+*.lst
