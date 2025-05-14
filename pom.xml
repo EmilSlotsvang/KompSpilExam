@@ -19,6 +19,7 @@
     <module>Bullet</module>
     <module>Commonasteroids</module>
     <module>Asteroids</module>
+    <module>Player</module>
 
   </modules>
   <properties>

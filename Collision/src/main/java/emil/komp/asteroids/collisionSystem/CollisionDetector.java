@@ -8,15 +8,7 @@ import emil.komp.asteroids.common.services.IPostEntityProcessingService;
 
 
 public class CollisionDetector implements IPostEntityProcessingService {
-    public int getKillstreak() {
-        return killstreak;
-    }
 
-    public void setKillstreak(int killstreak) {
-        this.killstreak = killstreak;
-    }
-
-    int killstreak = 0;
 
 
     @Override
@@ -28,10 +20,10 @@ public class CollisionDetector implements IPostEntityProcessingService {
                 continue;
             }
             if(this.collides(e1, e2)) {
-                killstreak++;
+
                 world.removeEntity(e1);
                 world.removeEntity(e2);
-                System.out.println("Killstreak: " + killstreak);
+
             }
             }
         }
