@@ -27,6 +27,5 @@ public class Gamedata {
 
     public GameKeys getKeys() {
     return keys;
-
     }
 }
