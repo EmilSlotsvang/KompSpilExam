@@ -10,3 +10,4 @@
 *.lst
 *.lst
 /.idea
+*.properties

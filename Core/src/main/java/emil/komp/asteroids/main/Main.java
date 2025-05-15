@@ -13,7 +13,7 @@ import javafx.scene.layout.Pane;
 import javafx.scene.shape.Polygon;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-
+import emil.komp.asteroids.main.ServiceLoaderHelper;
 import java.util.Collection;
 import java.util.Map;
 import java.util.ServiceLoader;
@@ -25,25 +25,16 @@ import java.util.concurrent.ConcurrentHashMap;
 import static java.util.stream.Collectors.toList;
 
 
+
 public class Main extends Application {
 
+    private  final ServiceLoaderHelper serviceLoaderHelper = new ServiceLoaderHelper();
     private final Gamedata gamedata = new Gamedata();
 
     private final World world = new World();
     private final Map <Entity, Polygon> polygons = new ConcurrentHashMap<>();
     private final Pane gameWindow = new Pane();
 
-    private Collection<? extends IGamePluginService> getPluginServices() {
-        return ServiceLoader.load(IGamePluginService.class).stream().map(ServiceLoader.Provider::get).collect(toList());
-    }
-
-    private Collection<? extends IEntityProcessingService> getEntityProcessingServices() {
-        return ServiceLoader.load(IEntityProcessingService.class).stream().map(ServiceLoader.Provider::get).collect(toList());
-    }
-
-    private Collection<? extends IPostEntityProcessingService> getPostEntityProcessingServices() {
-        return ServiceLoader.load(IPostEntityProcessingService.class).stream().map(ServiceLoader.Provider::get).collect(toList());
-    }
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
@@ -87,7 +78,7 @@ public class Main extends Application {
 
         });
 
-            for (IGamePluginService iGamePlugin : getPluginServices()){
+            for (IGamePluginService iGamePlugin : serviceLoaderHelper.getPluginServices()){
                 iGamePlugin.start(gamedata, world);
             }
             for (Entity entity : world.getEntities()){
@@ -115,11 +106,11 @@ public class Main extends Application {
     }
 
     private void update() {
-        for (IEntityProcessingService entityProcessorService : getEntityProcessingServices()) {
+        for (IEntityProcessingService entityProcessorService : serviceLoaderHelper.getEntityProcessingServices()) {
             entityProcessorService.process(gamedata, world);
         }
 
-        for (IPostEntityProcessingService postEntityProcessorService : getPostEntityProcessingServices()) {
+        for (IPostEntityProcessingService postEntityProcessorService : serviceLoaderHelper.getPostEntityProcessingServices()) {
             postEntityProcessorService.process(gamedata, world);
         }
     }
