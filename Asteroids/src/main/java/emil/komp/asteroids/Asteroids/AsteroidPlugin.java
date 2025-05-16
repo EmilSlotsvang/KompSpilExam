@@ -17,7 +17,7 @@ public class AsteroidPlugin implements IGamePluginService {
 
     @Override
     public void start(Gamedata gamedata, World world) {
-        // Start scheduler
+
         scheduler = Executors.newSingleThreadScheduledExecutor();
         scheduler.scheduleAtFixedRate(() -> {
             Entity asteroid = createAsteroid(gamedata);
@@ -28,9 +28,10 @@ public class AsteroidPlugin implements IGamePluginService {
     @Override
     public void stop(Gamedata gamedata, World world) {
 
-        if (scheduler != null && !scheduler.isShutdown()) {
+
             scheduler.shutdownNow();
-        }
+
+
 
 
         for (Entity asteroid : world.getEntities(asteroid.class)) {
@@ -41,12 +42,13 @@ public class AsteroidPlugin implements IGamePluginService {
     private Entity createAsteroid(Gamedata gamedata) {
         Entity asteroid = new asteroid();
         Random rand = new Random();
-        int size = rand.nextInt(10) + 5;
+        int size = 6;
         asteroid.setPolygonCoordinates(size, -size, -size, -size, -size, size, size, size);
         asteroid.setX(rand.nextInt(gamedata.getDisplayWidth()));
         asteroid.setY(rand.nextInt(gamedata.getDisplayHeight()));
         asteroid.setRadius(size);
         asteroid.setRotation(rand.nextInt(90));
         return asteroid;
+
     }
 }
