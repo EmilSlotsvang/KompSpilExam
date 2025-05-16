@@ -7,7 +7,7 @@ module Core {
     requires javafx.graphics;
 
     requires spring.context;
-        requires spring.core;
+    requires spring.core;
     requires spring.beans;
 
     exports emil.komp.asteroids.main to spring.context;
