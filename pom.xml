@@ -20,6 +20,8 @@
     <module>Commonasteroids</module>
     <module>Asteroids</module>
     <module>Player</module>
+    <module>ScoreSystem</module>
+    <module>Enemy</module>
 
   </modules>
   <properties>
