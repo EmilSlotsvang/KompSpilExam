@@ -35,6 +35,8 @@ public class Main extends Application {
         launch(Main.class);
     }
 
+
+    
     @Override
     public void start(Stage window) throws Exception {
         // Initialize Spring application context
