@@ -7,7 +7,6 @@ module Asteroids {
     requires Commonasteroids;
 
 
-
     provides IGamePluginService with emil.komp.asteroids.Asteroids.AsteroidPlugin;
     provides IEntityProcessingService with emil.komp.asteroids.Asteroids.AsteroidProcessor;
     provides IAsteroidSplitter with emil.komp.asteroids.Asteroids.AsteroidSplitterImpl;
