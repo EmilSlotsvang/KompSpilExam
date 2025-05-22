@@ -31,10 +31,13 @@ public class Main extends Application {
     private Iterable<IEntityProcessingService> entityProcessingServices;
     private Iterable<IPostEntityProcessingService> postEntityProcessingServices;
 
+
     public static void main(String[] args) {
         launch(Main.class);
     }
 
+
+    
     @Override
     public void start(Stage window) throws Exception {
         // Initialize Spring application context

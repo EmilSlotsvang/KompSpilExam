@@ -5,28 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07156530-7215-41b6-93ff-771fa4746add" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Asteroids/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Asteroids/src/main/java/emil/komp/asteroids/Asteroids/AsteroidPlugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Asteroids/src/main/java/emil/komp/asteroids/Asteroids/AsteroidProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Asteroids/src/main/java/emil/komp/asteroids/Asteroids/AsteroidSplitterImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Asteroids/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commonasteroids/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commonasteroids/src/main/java/emil/komp/asteroids/common/asteroids/IAsteroidSplitter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commonasteroids/src/main/java/emil/komp/asteroids/common/asteroids/asteroid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commonasteroids/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/target/Common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Common/target/Common-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/target/classes/emil/komp/asteroids/common/Data/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/Common/target/classes/emil/komp/asteroids/common/Data/Entity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/Common/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/target/Core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Core/target/Core-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/target/classes/emil/komp/asteroids/main/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Core/target/classes/emil/komp/asteroids/main/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/target/classes/emil/komp/asteroids/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Core/target/classes/emil/komp/asteroids/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mods-mvn/Common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mods-mvn/Common-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mods-mvn/Core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mods-mvn/Core-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mods-mvn/javafx-graphics-21.0.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asteroids/src/main/java/emil/komp/asteroids/Asteroids/AsteroidPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Asteroids/src/main/java/emil/komp/asteroids/Asteroids/AsteroidPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asteroids/src/main/java/emil/komp/asteroids/Asteroids/AsteroidSplitterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Asteroids/src/main/java/emil/komp/asteroids/Asteroids/AsteroidSplitterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asteroids/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Asteroids/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collision/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Collision/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collision/src/main/java/emil/komp/asteroids/collisionSystem/CollisionDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/Collision/src/main/java/emil/komp/asteroids/collisionSystem/CollisionDetector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collision/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Collision/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collision/target/surefire-reports/TEST-emil.komp.asteroids.collisionSystem.test.CollisionTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Collision/target/surefire-reports/TEST-emil.komp.asteroids.collisionSystem.test.CollisionTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commonasteroids/src/main/java/emil/komp/asteroids/common/asteroids/IAsteroidSplitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commonasteroids/src/main/java/emil/komp/asteroids/common/asteroids/IAsteroidSplitter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="module-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -72,7 +59,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Test",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/KompExam",
@@ -130,6 +117,7 @@
       <workItem from="1746813501969" duration="12000" />
       <workItem from="1746814026843" duration="9000" />
       <workItem from="1746814984901" duration="9327000" />
+      <workItem from="1747305948552" duration="1936000" />
     </task>
     <servers />
   </component>
