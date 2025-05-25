@@ -17,8 +17,13 @@ public class AsteroidPlugin implements IGamePluginService {
 
     @Override
     public void start(Gamedata gamedata, World world) {
+        scheduler = Executors.newSingleThreadScheduledExecutor(r -> {
+            Thread t = new Thread(r);
+            t.setDaemon(true); // allows JVM to exit when only daemon threads are running
+            t.setName("Asteroid-Spawner");
+            return t;
+        });
 
-        scheduler = Executors.newSingleThreadScheduledExecutor();
         scheduler.scheduleAtFixedRate(() -> {
             Entity asteroid = createAsteroid(gamedata);
             world.addEntity(asteroid);
@@ -27,12 +32,9 @@ public class AsteroidPlugin implements IGamePluginService {
 
     @Override
     public void stop(Gamedata gamedata, World world) {
-
-
+        if (scheduler != null && !scheduler.isShutdown()) {
             scheduler.shutdownNow();
-
-
-
+        }
 
         for (Entity asteroid : world.getEntities(asteroid.class)) {
             world.removeEntity(asteroid);
@@ -49,6 +51,5 @@ public class AsteroidPlugin implements IGamePluginService {
         asteroid.setRadius(size);
         asteroid.setRotation(rand.nextInt(90));
         return asteroid;
-
     }
 }

@@ -40,10 +40,10 @@ public class Main extends Application {
     
     @Override
     public void start(Stage window) throws Exception {
-        // Initialize Spring application context
+
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConf.class);
 
-        // Retrieve beans from SpringConfig
+
         gamePluginServices = context.getBean("gamePluginServices", Iterable.class);
         entityProcessingServices = context.getBean("entityProcessingServices", Iterable.class);
         postEntityProcessingServices = context.getBean("postEntityProcessingServices", Iterable.class);
@@ -82,7 +82,7 @@ public class Main extends Application {
             }
         });
 
-        // Use Spring beans instead of ServiceLoaderHelper
+
         for (IGamePluginService iGamePlugin : gamePluginServices) {
             iGamePlugin.start(gameData, world);
         }

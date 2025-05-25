@@ -13,26 +13,23 @@ class CollisionTest {
 
     @Test
     void testCollisionDetection() {
-        // Create two entities
+
         Entity playerShip = new Entity();
         playerShip.setX(50);
         playerShip.setY(50);
         playerShip.setRadius(10);
-        System.out.println("hello, world, let pray it works :D ");
+        System.out.println("This is the test telling you to pass ");
 
         Entity asteroid = new Entity();
         asteroid.setX(55);
         asteroid.setY(55);
         asteroid.setRadius(10);
 
-        // Check if collision is detected
         assertTrue(isColliding(playerShip, asteroid), "Collision should be detected");
 
-        // Move asteroid further away
         asteroid.setX(100);
         asteroid.setY(100);
 
-        // Check if collision is not detected (set as asserttrue to test for failing)
         assertFalse(isColliding(playerShip, asteroid), "Collision should not be detected");
     }
 
