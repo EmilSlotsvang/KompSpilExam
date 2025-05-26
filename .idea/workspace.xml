@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07156530-7215-41b6-93ff-771fa4746add" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ScoringSystem/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScoringSystem/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScoringSystem/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScoringSystem/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScoringSystem/src/main/java/emil/komp/asteroids/ScoreingSystem/Score.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Asteroids/src/main/java/emil/komp/asteroids/Asteroids/AsteroidPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Asteroids/src/main/java/emil/komp/asteroids/Asteroids/AsteroidPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Asteroids/src/main/java/emil/komp/asteroids/Asteroids/AsteroidSplitterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Asteroids/src/main/java/emil/komp/asteroids/Asteroids/AsteroidSplitterImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Asteroids/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Asteroids/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Collision/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Collision/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Collision/src/main/java/emil/komp/asteroids/collisionSystem/CollisionDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/Collision/src/main/java/emil/komp/asteroids/collisionSystem/CollisionDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Collision/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Collision/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Collision/target/surefire-reports/TEST-emil.komp.asteroids.collisionSystem.test.CollisionTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Collision/target/surefire-reports/TEST-emil.komp.asteroids.collisionSystem.test.CollisionTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commonasteroids/src/main/java/emil/komp/asteroids/common/asteroids/IAsteroidSplitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commonasteroids/src/main/java/emil/komp/asteroids/common/asteroids/IAsteroidSplitter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScoreSystem/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScoreSystem/src/main/java/emil/komp/asteroids/ScoreSystem/ScoringSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,14 +55,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Score.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Test",
+    "Spring Boot.Score.executor": "Run",
+    "git-widget-placeholder": "MicroWebpage",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/KompExam",
+    "last_opened_file_path": "C:/KompExam/KompSpilExam",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,6 +86,9 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="emil.komp.asteroids.main" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\KompExam\KompSpilExam" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
@@ -92,6 +101,13 @@
       <module name="KompSpilExam" />
       <option name="filePath" />
       <method v="2" />
+    </configuration>
+    <configuration name="Score" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ScoringSystem" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="emil.komp.asteroids.ScoreingSystem.Score" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
   </component>
   <component name="SharedIndexes">
