@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: emil.komp.asteroids.PlayerControlSystem.test.PlayerControlSystemTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.230 s -- in emil.komp.asteroids.PlayerControlSystem.test.PlayerControlSystemTest

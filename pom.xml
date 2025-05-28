@@ -5,6 +5,8 @@
   <groupId>emil.komp.asteroids</groupId>
   <artifactId>KompSpilExam</artifactId>
   <version>1.0-SNAPSHOT</version>
+
+
   <packaging>pom</packaging>
   <name>KompSpilExam</name>
   <repositories>
@@ -22,6 +24,7 @@
     <module>Player</module>
     <module>ScoringSystem</module>
     <module>Enemy</module>
+    <module>ScoreingClient</module>
 
   </modules>
   <properties>
@@ -47,6 +50,9 @@
             <version>19.0.2</version>
             <scope>compile</scope>
         </dependency>
+
+
+
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
@@ -54,6 +60,24 @@
             <scope>compile</scope>
         </dependency>
 
+      <dependency>
+        <groupId>io.micrometer</groupId>
+        <artifactId>micrometer-observation</artifactId>
+        <version>1.12.3</version>
+      </dependency>
+
+
+      <dependency>
+        <groupId>io.micrometer</groupId>
+        <artifactId>micrometer-commons</artifactId>
+        <version>1.12.3</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-web</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
 
 
 

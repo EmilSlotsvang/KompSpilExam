@@ -3,6 +3,7 @@ package emil.komp.asteroids.main;
 import emil.komp.asteroids.common.services.IEntityProcessingService;
 import emil.komp.asteroids.common.services.IGamePluginService;
 import emil.komp.asteroids.common.services.IPostEntityProcessingService;
+import emil.komp.asteroids.common.services.IScore;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -25,7 +26,13 @@ import java.util.ServiceLoader;
         }
 
         @Bean
-        public Iterable<emil.komp.asteroids.common.services.IPostEntityProcessingService> postEntityProcessingServices() {
-            return ServiceLoader.load(emil.komp.asteroids.common.services.IPostEntityProcessingService.class);
+        public Iterable<IPostEntityProcessingService> postEntityProcessingServices() {
+            return ServiceLoader.load(IPostEntityProcessingService.class);
         }
+       /*@Bean
+        public IScore scores() {
+            return ServiceLoader.load(IScore.class).findFirst().orElse(null);
+        }
+
+        */
     }

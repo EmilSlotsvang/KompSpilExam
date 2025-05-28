@@ -5,6 +5,7 @@ module Collision {
     provides IPostEntityProcessingService with emil.komp.asteroids.collisionSystem.CollisionDetector;
     requires Commonasteroids;
     uses emil.komp.asteroids.common.asteroids.IAsteroidSplitter;
+    uses emil.komp.asteroids.common.services.IScore;
 
 
 

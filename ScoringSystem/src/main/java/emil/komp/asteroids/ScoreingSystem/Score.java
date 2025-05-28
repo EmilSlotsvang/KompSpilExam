@@ -7,13 +7,19 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
+
 public class Score {
+
+	int TotalScore = 0;
+
 	public static void main(String[] args) {
 		SpringApplication.run(Score.class, args);
 	}
-	@GetMapping("/hello")
+	@GetMapping("/scoreing")
 
-	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
-		return String.format("Hello %s!", name);
+	public int Score() {
+		TotalScore += 1;
+		return TotalScore;
 	}
+
 }
