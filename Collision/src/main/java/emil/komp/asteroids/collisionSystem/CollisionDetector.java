@@ -5,17 +5,23 @@ import emil.komp.asteroids.common.Data.World;
 import emil.komp.asteroids.common.Data.Gamedata;
 import emil.komp.asteroids.common.services.IPostEntityProcessingService;
 import emil.komp.asteroids.common.asteroids.IAsteroidSplitter;
+import emil.komp.asteroids.common.services.IScore;
 
 import java.util.ServiceLoader;
 
 public class CollisionDetector implements IPostEntityProcessingService {
 
+    int score = 0;
     @Override
     public void process(Gamedata gamedata, World world) {
 
         // Load splitter én gang i stedet for i hvert kald
         ServiceLoader<IAsteroidSplitter> loader = ServiceLoader.load(IAsteroidSplitter.class);
         IAsteroidSplitter splitter = loader.findFirst().orElse(null);
+
+
+        //System.out.println();
+        //ServiceLoader.load(IScore.class).findFirst().ifPresent(score -> {System.out.println(score.get());});
 
         for (Entity e1 : world.getEntities()) {
             for (Entity e2 : world.getEntities()) {
@@ -36,7 +42,9 @@ public class CollisionDetector implements IPostEntityProcessingService {
                     System.out.println("[DEBUG] Removing entity: " + e1.getId());
                     world.removeEntity(e1);
                     world.removeEntity(e2);
-                    break; // e1 er nu fjernet, undgå flere sammenligninger
+                    //score = Integer.parseInt(ServiceLoader.load(IScore.class).findFirst().ifPresent(score -> {score.get();}));
+
+                    break;
                 }
             }
         }

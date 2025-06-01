@@ -17,6 +17,7 @@ module Core {
     uses emil.komp.asteroids.common.services.IEntityProcessingService;
     uses emil.komp.asteroids.common.services.IGamePluginService;
     uses emil.komp.asteroids.common.services.IPostEntityProcessingService;
+    uses emil.komp.asteroids.common.services.IScore;
 
 
 }

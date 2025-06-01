@@ -10,7 +10,7 @@ public class EnemyPlugin implements IGamePluginService {
     private Entity Enemy;
 
     public EnemyPlugin() {
-        // Constructor
+
     }
 
     @Override
