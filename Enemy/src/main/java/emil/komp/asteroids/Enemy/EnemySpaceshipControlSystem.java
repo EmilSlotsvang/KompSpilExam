@@ -33,7 +33,7 @@ public class EnemySpaceshipControlSystem implements IEntityProcessingService {
             long lastShot = lastShotTimes.getOrDefault(enemy, 0L);
 
             if (randomnumber > 0.75 && (currentTime - lastShot) >= cooldownMs) {
-                // starts blasting
+
                 getBulletSPIs().stream().findFirst().ifPresent(
                         spi -> {
                             world.addEntity(spi.CreateBullet(enemy, gameData));

@@ -20,8 +20,8 @@ public class CollisionDetector implements IPostEntityProcessingService {
         IAsteroidSplitter splitter = loader.findFirst().orElse(null);
 
 
-        System.out.println();
-        ServiceLoader.load(IScore.class).findFirst().ifPresent(score -> {System.out.println(score.get());});
+        //System.out.println();
+        //ServiceLoader.load(IScore.class).findFirst().ifPresent(score -> {System.out.println(score.get());});
 
         for (Entity e1 : world.getEntities()) {
             for (Entity e2 : world.getEntities()) {

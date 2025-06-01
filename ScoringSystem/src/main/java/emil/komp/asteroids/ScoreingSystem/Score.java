@@ -19,6 +19,7 @@ public class Score {
 
 	public int Score() {
 		TotalScore += 1;
+
 		return TotalScore;
 	}
 
